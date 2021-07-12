@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Payment Kit Demo</string>
+    <string name="open_self_payment_native_app">Open native app with self payment</string>
+    <string name="open_host_payment_native_app">Open native app with payment by host app</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="login_with_google">Login with Google</string>
+    <string name="login_screen_title">Login</string>
+</resources>
