@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnRegisterMMC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register MMC" />
+
+    <Button
+        android:id="@+id/btnGetAllPaymentMethods"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get all Payment methods" />
+
+    <Button
+        android:id="@+id/btnInitTransaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Init Transaction" />
+
+    <Button
+        android:id="@+id/btnGetTransactions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get all Transactions" />
+
+    <Button
+        android:id="@+id/btnGetAllBanksSupported"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get all banks supported" />
+
+    <Button
+        android:id="@+id/btnGetInstallmentPartners"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get all installment partners" />
+
+</LinearLayout>
