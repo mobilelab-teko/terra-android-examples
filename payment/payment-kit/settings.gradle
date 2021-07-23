@@ -1,0 +1,21 @@
+include(
+        ":app",
+        ":demoMiniApp:demoMiniNativeApp",
+        ":demoMiniApp:demoMiniNativeAppConnector",
+        ":demoMiniApp:demoMiniNativeApp-02",
+        ":demoMiniApp:demoMiniNativeAppConnector-02"
+)
+
+rootProject.name = "Payment Kit Demo"
+
+project(":demoMiniApp:demoMiniNativeApp").projectDir =
+        new File(rootProject.projectDir, "./demoMiniApp/demoMiniNativeApp")
+
+project(":demoMiniApp:demoMiniNativeAppConnector").projectDir =
+        new File(rootProject.projectDir, "./demoMiniApp/demoMiniNativeAppConnector")
+
+project(":demoMiniApp:demoMiniNativeApp-02").projectDir =
+        new File(rootProject.projectDir, "./demoMiniApp-02/demoMiniNativeApp")
+
+project(":demoMiniApp:demoMiniNativeAppConnector-02").projectDir =
+        new File(rootProject.projectDir, "./demoMiniApp-02/demoMiniNativeAppConnector")
