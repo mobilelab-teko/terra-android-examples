@@ -9,7 +9,7 @@ android {
     compileSdkVersion 30
     buildToolsVersion "30.0.2"
 
-    resourcePrefix 'mini_app_'
+    resourcePrefix 'mini_app_02_'
 
     defaultConfig {
         minSdkVersion 19

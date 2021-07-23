@@ -54,16 +54,13 @@ dependencies {
     implementation project(path: ":demoMiniApp:demoMiniNativeAppConnector-02")
 
     // Teko Android framework
-    implementation 'vn.teko.android.core:ui:0.2.29'
+    implementation "vn.teko.android.core:ui:$core_version"
 
     // Terra core
     implementation "vn.teko.terra:terra-core-android:$terra_version"
 
     // Hestia
     implementation "vn.teko.hestia:terra-hestia:$hestia_version"
-    implementation "vn.teko.hestia:hestia-android:$hestia_version"
-    implementation "vn.teko.hestia:hestia-android-native:$hestia_version"
-
     // Payment
     implementation "vn.teko.android.payment:payment-ui:$payment_version"
 

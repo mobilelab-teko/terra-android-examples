@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.mini_app_activity_mini_app.*
 import vn.teko.android.payment.kit.PaymentKit
 import vn.teko.android.payment.kit.PaymentResultV2Callback
 import vn.teko.android.payment.kit.model.request.PaymentRequestBuilder
@@ -35,7 +34,7 @@ class MiniAppActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.mini_app_activity_mini_app)
+        setContentView(R.layout.mini_app_02_activity_mini_app)
 
         title = "Mini Application - Host App Payment Flow"
 
