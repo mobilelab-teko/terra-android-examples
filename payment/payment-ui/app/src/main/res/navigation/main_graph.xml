@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_graph.xml"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="vn.teko.terra.demo.paymentui.home.HomeFragment"
+        android:label="homeFragment">
+
+        <action
+            android:id="@+id/action_home_to_pay_with_vnpay_gateway"
+            app:destination="@id/vnpayGatewayFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/vnpayGatewayFragment"
+        android:name="vn.teko.terra.demo.paymentui.vnpay_gateway.PayViaVnPayGatewayFragment"
+        android:label="vnpayGatewayFragment" />
+
+</navigation>
