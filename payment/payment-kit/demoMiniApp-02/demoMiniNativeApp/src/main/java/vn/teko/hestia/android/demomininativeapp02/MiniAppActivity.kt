@@ -27,7 +27,7 @@ class MiniAppActivity : AppCompatActivity() {
                 AlertDialog.Builder(this@MiniAppActivity)
                     .setTitle(message)
                     .setMessage(result.error?.message.orEmpty())
-                    .create()
+                    .setPositiveButton("OK") { _, _ -> }
                     .show()
             }
         }
@@ -67,8 +67,4 @@ class MiniAppActivity : AppCompatActivity() {
         )
     }
 
-    companion object {
-        const val EXTRA_KEY_ID_TOKEN = "id-token"
-        const val EXTRA_KEY_DUMMY_STRING = "dummy-string"
-    }
 }

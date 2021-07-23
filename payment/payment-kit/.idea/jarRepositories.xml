@@ -26,5 +26,15 @@
       <option name="name" value="TekoMaven" />
       <option name="url" value="https://maven.pkg.github.com/teko-vn/android-packages" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="Tripi artifactory" />
+      <option name="name" value="Tripi artifactory" />
+      <option name="url" value="https://repo.tripi.vn/artifactory/gradle-release-local" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven" />
+      <option name="name" value="maven" />
+      <option name="url" value="https://asia-southeast1-maven.pkg.dev/teko-development/teko-mobile-sdks" />
+    </remote-repository>
   </component>
 </project>

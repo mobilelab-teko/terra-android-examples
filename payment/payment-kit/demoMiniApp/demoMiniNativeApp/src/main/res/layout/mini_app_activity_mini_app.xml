@@ -3,16 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center">
+    android:padding="16dp">
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnRequestPayment"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnRequestPaymentWithDefaultTerra"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/mini_app_request_payment"
-        android:layout_marginTop="100dp"
+        android:text="Request payment with default terra"
+        android:layout_marginTop="48dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnRequestPaymentSelfInitializedTerra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Request payment with self initialized terra"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnRequestPaymentWithDefaultTerra" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

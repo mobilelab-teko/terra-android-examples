@@ -1,12 +1,13 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
     ext.kotlin_version = "1.4.32"
-    ext.terra_version = "0.7.3"
-    ext.hestia_version = "1.0.0-alpha7"
-    ext.payment_version = "1.5.0-alpha2"
-    ext.apollo_version = "1.7.0"
-    ext.iris_version = "0.1.0-alpha1"
-    ext.auth_version = "0.4.0-alpha6"
+    ext.core = "0.2.33"
+    ext.terra_version = "0.8.1"
+    ext.hestia_version = "1.0.0-alpha10"
+    ext.payment_version = "1.6.0"
+    ext.apollo_version = "1.8.1"
+    ext.iris_version = "0.1.0"
+    ext.auth_version = "0.4.0-alpha10"
 
     repositories {
         google()
@@ -37,6 +38,20 @@ allprojects {
                 password properties.getProperty('TekoPackage.password')
             }
         }
+
+        maven {
+            setUrl("https://asia-southeast1-maven.pkg.dev/teko-development/teko-mobile-sdks")
+
+            authentication {
+                basic(BasicAuthentication)
+            }
+
+            credentials {
+                username = "_json_key_base64"
+                password = properties.getProperty('TekoGoogleRegistry.password')
+            }
+        }
+
     }
 }
 
