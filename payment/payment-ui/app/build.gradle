@@ -58,8 +58,8 @@ dependencies {
     // Payment SDK
     implementation("vn.teko.android.payment:payment-manager-v2:$payment_version")
     implementation("vn.teko.android.payment:payment-ui:$payment_version")
-    implementation("vn.teko.terra:terra-core-android:0.7.2")
-    implementation("vn.teko.apollo:terra-apollo:1.7.7")
+    implementation("vn.teko.terra:terra-core-android:$terra_version")
+    implementation("vn.teko.apollo:terra-apollo:$apollo_version")
 
     implementation 'com.android.support:multidex:1.0.3'
 }

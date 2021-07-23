@@ -18,9 +18,7 @@ class PaymentSampleApplication: Application() {
     override fun onCreate() {
         super.onCreate()
         shared = this
-        TerraApp.initializeApp(this).apply {
-            TerraApollo.getInstance(this)
-        }
+        TerraApp.initializeApp(this)
         paymentGateway = TerraPayment.getInstance(TerraApp.getInstance())
     }
 }
