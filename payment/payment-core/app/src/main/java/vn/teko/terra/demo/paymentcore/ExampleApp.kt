@@ -7,13 +7,8 @@ import vn.teko.terra.core.android.terra.TerraApp
 
 class ExampleApp: Application() {
 
-    lateinit var paymentGateway: IPaymentGateway
-
     override fun onCreate() {
+        TerraApp.initializeApp(this)
         super.onCreate()
-
-        TerraApp.initializeApp(this).apply {
-            paymentGateway = TerraPayment.getInstance(this)
-        }
     }
 }

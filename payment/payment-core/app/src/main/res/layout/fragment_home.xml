@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".home.HomeFragment">
+
+    <Button
+        android:id="@+id/btnGetAllPaymentMethods"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get all Payment methods" />
+
+    <Button
+        android:id="@+id/btnInitTransaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Init Transaction" />
+
+    <Button
+        android:id="@+id/btnGetTransactions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get all Transactions" />
+
+    <Button
+        android:id="@+id/btnNavToOtherApi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="OTHER APIs" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,47 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    tools:context=".MainActivity">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <Button
-        android:id="@+id/btnRegisterMMC"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Register MMC" />
+    <FrameLayout
+        android:id="@+id/rootView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
 
-    <Button
-        android:id="@+id/btnGetAllPaymentMethods"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Get all Payment methods" />
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/mainHostFragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:navGraph="@navigation/nav_graph"
+            app:defaultNavHost="true" />
 
-    <Button
-        android:id="@+id/btnInitTransaction"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Init Transaction" />
+    </FrameLayout>
 
-    <Button
-        android:id="@+id/btnGetTransactions"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Get all Transactions" />
-
-    <Button
-        android:id="@+id/btnGetAllBanksSupported"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Get all banks supported" />
-
-    <Button
-        android:id="@+id/btnGetInstallmentPartners"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Get all installment partners" />
-
-</LinearLayout>
+</layout>
