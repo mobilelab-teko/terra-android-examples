@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">terra-core</string>
+    <string name="show_log">showLog</string>
+    <string name="demo_string">demoString</string>
+    <string name="demo_number">demoNumber</string>
+    <string name="demo_boolean">demoBoolean</string>
+</resources>
