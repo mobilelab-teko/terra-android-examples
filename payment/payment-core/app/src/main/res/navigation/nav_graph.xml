@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_graph.xml"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="vn.teko.terra.demo.paymentcore.home.HomeFragment"
+        android:label="homeFragment">
+
+        <action
+            android:id="@+id/action_home_to_other_apis"
+            app:destination="@id/otherAPIs" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/otherAPIs"
+        android:name="vn.teko.terra.demo.paymentcore.other.OtherAPIsFragment"
+        android:label="otherAPIs" />
+
+</navigation>
