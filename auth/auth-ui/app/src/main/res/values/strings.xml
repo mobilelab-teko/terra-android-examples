@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">auth-ui</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="login_success">Login success</string>
+    <string name="login_fail">Login fail</string>
+    <string name="logged_out">Logged out</string>
+</resources>
