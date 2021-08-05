@@ -25,15 +25,6 @@ allprojects {
 
         Properties properties = new Properties()
         properties.load(project.rootProject.file('local.properties').newDataInputStream())
-        maven() {
-            name = "TekoMaven"
-            url = uri("https://maven.pkg.github.com/teko-vn/android-packages")
-
-            credentials {
-                username properties.getProperty('TekoPackage.username')
-                password properties.getProperty('TekoPackage.password')
-            }
-        }
 
         maven {
             setUrl("https://asia-southeast1-maven.pkg.dev/teko-development/teko-mobile-sdks")

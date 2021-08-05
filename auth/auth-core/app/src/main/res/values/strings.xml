@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">auth-ui</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="login_success">Login success</string>
+    <string name="login_fail">Login fail</string>
+    <string name="logged_out">Logged out</string>
+    <string name="login_facebook">Login facebook</string>
+    <string name="login_google">Login google</string>
+    <string name="login_username_password">Login username/password</string>
+    <string name="login_phone">Login phone</string>
+    <string name="enter_username">Enter username</string>
+    <string name="enter_password">Enter password</string>
+    <string name="enter_phone">Enter phone</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="request_otp">Request OTP</string>
+    <string name="request_otp_success">OTP was sent to your phone! please enter it to login!</string>
+    <string name="error_missing_data">Please input all data</string>
+</resources>
