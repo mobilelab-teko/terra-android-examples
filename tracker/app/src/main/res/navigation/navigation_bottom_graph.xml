@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottomNavGraph"
+    app:startDestination="@id/homeTab">
+
+    <fragment
+        android:id="@+id/homeTab"
+        android:name="com.example.tracker_android.ui.fragment.tabnavigation.HomeTabFragment"
+        tools:layout="@layout/fragment_home_tab" />
+
+    <include app:graph="@navigation/navigation_category" />
+
+    <fragment
+        android:id="@+id/notificationTab"
+        android:name="com.example.tracker_android.ui.fragment.tabnavigation.NotificationTabFragment"
+        tools:layout="@layout/fragment_notification_tab" />
+
+    <fragment
+        android:id="@+id/accountTab"
+        android:name="com.example.tracker_android.ui.fragment.tabnavigation.AccountTabFragment"
+        tools:layout="@layout/fragment_account_tab" />
+
+</navigation>

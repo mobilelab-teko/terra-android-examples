@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">tracker-android-demo-app</string>
+    <string name="btnBack">Back</string>
+    <string name="btnAdd">Add</string>
+    <string name="btnRemove">Remove</string>
+    <string name="btnIncrease">Increase</string>
+    <string name="btnDecrease">Decrease</string>
+    <string name="btnCustom">Custom</string>
+    <string name="btnScreenView">Screen View</string>
+    <string name="btnSearchEvent">Search</string>
+    <string name="btnTiming">Timing Event</string>
+    <string name="btnPageView">Page View</string>
+    <string name="btnPushNotification">Push Notification</string>
+    <string name="btnCheckout">Checkout</string>
+    <string name="btnAbandon">Abandon</string>
+    <string name="btnGotoThirdActivity">Go to third activity</string>
+    <string name="btnGotoUntrackedThirdActivity">Go to untracked third activity</string>
+    <string name="btnGotoTrackedFragment">Go to Tracked fragment</string>
+
+    <string name="tabNavHome">Home</string>
+    <string name="tabNavCategory">Category</string>
+    <string name="tabNavSubCategory">SubCategory</string>
+    <string name="tabNavNotification">Notification</string>
+    <string name="tabNavAccount">Account</string>
+
+    <string name="demoBottomSheet">demoBottomSheet</string>
+    <string name="fragmentTracked">fragmentTracked</string>
+    <string name="thirdActivity">thirdActivity (shouldTrack=%s)</string>
+</resources>

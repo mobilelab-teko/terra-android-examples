@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottomNavGraph"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.example.tracker_android.ui.fragment.home.HomeFragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_tabNavigationFragment"
+            app:destination="@id/navigationTab" />
+        <action
+            android:id="@+id/action_homeFragment_to_viewPagerFragment"
+            app:destination="@id/viewPager" />
+        <action
+            android:id="@+id/action_home_to_untracked"
+            app:destination="@id/untracked" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigationTab"
+        android:name="com.example.tracker_android.ui.fragment.tabnavigation.TabNavigationFragment"
+        tools:layout="@layout/fragment_tab_navigation" />
+
+    <fragment
+        android:id="@+id/viewPager"
+        android:name="com.example.tracker_android.ui.fragment.viewpager.ViewPagerFragment"
+        tools:layout="@layout/fragment_view_pager" />
+
+    <fragment
+        android:id="@+id/untracked"
+        android:name="com.example.tracker_android.ui.fragment.home.UnTrackedFragment"
+        tools:layout="@layout/fragment_untracked">
+        <action
+            android:id="@+id/action_untracked_to_tracked"
+            app:destination="@id/tracked" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/tracked"
+        android:name="com.example.tracker_android.ui.fragment.home.TrackedFragment"
+        tools:layout="@layout/fragment_tracked" />
+
+</navigation>
