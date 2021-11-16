@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">super app</string>
+    <string name="login">Login</string>
+    <string name="home_title">Mini App Demo</string>
+
+    <string name="btnOpenMiniApp">Open Mini App</string>
+    <string name="btnLoginGoogle">Google</string>
+    <string name="btnLogOut">Logout</string>
+
+    <string name="titlePleaseLogin">Please login</string>
+
+</resources>

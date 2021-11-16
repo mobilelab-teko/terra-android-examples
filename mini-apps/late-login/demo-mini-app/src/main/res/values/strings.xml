@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">demo mini native app</string>
+    <string name="app_name_fragment">demo mini native app (fragment)</string>
+</resources>

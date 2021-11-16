@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/predefined_ui_bg"
+        app:visible="@{viewModel.state.loading == false}">
+
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_padding_default"
+            android:text="@{viewModel.user != null ? viewModel.user.name : @string/titlePleaseLogin}"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="@string/titlePleaseLogin" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLoginGoogle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_padding_default"
+            android:layout_marginLeft="@dimen/margin_padding_default"
+            android:layout_marginTop="@dimen/margin_padding_default"
+            android:layout_marginEnd="@dimen/margin_padding_default"
+            android:layout_marginRight="@dimen/margin_padding_default"
+            android:background="@drawable/bg_google_button"
+            android:drawableStart="@drawable/google"
+            android:drawableLeft="@drawable/google"
+            android:paddingStart="@dimen/margin_padding_small"
+            android:paddingLeft="@dimen/margin_padding_small"
+            android:paddingEnd="@dimen/margin_padding_small"
+            android:paddingRight="@dimen/margin_padding_small"
+            android:textColor="@color/predefined_ui_light"
+            android:text="@string/btnLoginGoogle"
+            android:onClick="@{() -> viewModel.loginGoogle()}"
+            app:visible="@{viewModel.user == null}"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLogOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_padding_default"
+            android:paddingStart="@dimen/margin_padding_small"
+            android:paddingLeft="@dimen/margin_padding_small"
+            android:paddingEnd="@dimen/margin_padding_small"
+            android:paddingRight="@dimen/margin_padding_small"
+            android:text="@string/btnLogOut"
+            android:onClick="@{() -> viewModel.logOut()}"
+            app:visible="@{viewModel.user != null}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="vn.teko.android.superapp.ui.main.login.LoginViewModel" />
+    </data>
+</layout>

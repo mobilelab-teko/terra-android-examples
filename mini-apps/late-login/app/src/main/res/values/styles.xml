@@ -1,0 +1,69 @@
+<resources>
+
+    <style name="AppTheme.Base" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorOnPrimary">@color/predefined_ui_light</item>
+
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryDark</item>
+        <item name="colorOnSecondary">@color/predefined_ui_light</item>
+
+        <item name="colorError">@color/colorError</item>
+        <item name="colorOnError">@color/predefined_ui_light</item>
+
+        <item name="colorSurface">@color/predefined_ui_light</item>
+        <item name="colorOnSurface">@color/colorPrimary</item>
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="colorOnBackground">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme" parent="AppTheme.Base" />
+
+    <style name="MainTheme" parent="AppTheme.Base">
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+    </style>
+
+    <style name="H2Bold">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:fontFamily">@font/roboto_medium_font</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="H3Bold">
+        <item name="android:textSize">@dimen/text_size_default</item>
+        <item name="android:fontFamily">@font/roboto_medium_font</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="SubtitleDefault">
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:fontFamily">@font/roboto_regular_font</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="BodyMedium">
+        <item name="android:fontFamily">@font/roboto_medium_font</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="BodyDefault">
+        <item name="android:fontFamily">@font/roboto_regular_font</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="BodyTiny">
+        <item name="android:fontFamily">@font/roboto_regular_font</item>
+        <item name="android:textSize">@dimen/text_size_tiny</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="CaptionDefault">
+        <item name="android:fontFamily">@font/roboto_regular_font</item>
+        <item name="android:textSize">@dimen/text_size_tiny</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+</resources>

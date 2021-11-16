@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="common_zero">0dp</dimen>
+
+    <dimen name="margin_padding_tiny_s">1dp</dimen>
+    <dimen name="margin_padding_tiny">2dp</dimen>
+    <dimen name="margin_padding_tiny_l">4dp</dimen>
+    <dimen name="margin_padding_small_s">6dp</dimen>
+    <dimen name="margin_padding_small">8dp</dimen>
+    <dimen name="margin_padding_small_l">10dp</dimen>
+    <dimen name="margin_padding_default_s">12dp</dimen>
+    <dimen name="margin_padding_default">14dp</dimen>
+    <dimen name="margin_padding_default_l">16dp</dimen>
+    <dimen name="margin_padding_medium_s">20dp</dimen>
+    <dimen name="margin_padding_medium">24dp</dimen>
+    <dimen name="margin_padding_medium_l">32dp</dimen>
+    <dimen name="margin_padding_large_s">40dp</dimen>
+    <dimen name="margin_padding_large">48dp</dimen>
+    <dimen name="margin_padding_large_l">64dp</dimen>
+
+    <dimen name="divider_default">8dp</dimen>
+    <dimen name="border_default">1dp</dimen>
+
+    <dimen name="elevation_tiny">2dp</dimen>
+    <dimen name="elevation_small">4dp</dimen>
+    <dimen name="elevation_default">8dp</dimen>
+    <dimen name="elevation_medium">12dp</dimen>
+
+    <dimen name="button_size_small">32dp</dimen>
+    <dimen name="button_size_default">40dp</dimen>
+    <dimen name="button_size_medium">48dp</dimen>
+
+    <dimen name="icon_size_tiny">16dp</dimen>
+    <dimen name="icon_size_small">20dp</dimen>
+    <dimen name="icon_size_default">24dp</dimen>
+    <dimen name="icon_size_medium">32dp</dimen>
+    <dimen name="icon_size_large">40dp</dimen>
+    <dimen name="icon_size_huge">48dp</dimen>
+
+    <dimen name="image_size_tiny">48dp</dimen>
+    <dimen name="image_size_small">64dp</dimen>
+    <dimen name="image_size_default">128dp</dimen>
+
+    <dimen name="header_height">56dp</dimen>
+    <dimen name="line_height">1dp</dimen>
+
+    <dimen name="text_size_tiny">8sp</dimen>
+    <dimen name="text_size_small">10sp</dimen>
+    <dimen name="text_size_default">12sp</dimen>
+    <dimen name="text_size_medium">14sp</dimen>
+    <dimen name="text_size_large">16sp</dimen>
+    <dimen name="text_size_huge">20sp</dimen>
+
+</resources>
